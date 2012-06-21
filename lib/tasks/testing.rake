@@ -10,11 +10,9 @@ task :i => "test:integration"
 desc "Run unit and functional tests"
 task :uf => ["test:units", "test:functionals"]
 
-desc "Run a single test without preparing database first. Smart about finding the test file.
-Syntax: rake t u=[file name] n=[test name]
-u (or f or i) is shortcut for unit, functional and integration
-so this mean run test from unit folder where name match to 'file name' and test name match to 'test name'
-"
+desc "Run single test, syntax: rake t t=[file_name] n=[test_name] ."
+task :t
+
 Rake::TestTask.new(:t) do |t|
   if ARGV[1]
     # take the first parameter and grab everything right of '=' sign, ignore .rb if it exists in parameter
@@ -41,3 +39,4 @@ Rake::TestTask.new(:t) do |t|
 
   end
 end
+

@@ -3,7 +3,7 @@
 Gem::Specification.new do |gem|
   gem.authors       = ["Sergey Kojin"]
   gem.email         = ["sergey.kojin@gmail.com"]
-  gem.description   = %q{Set of tasks to type less when call tests}
+  gem.description   = %q{Set of rake tasksе that let's you type less to run tests. }
   gem.summary       = %q{Shortcuts for rails tests}
   gem.homepage      = "https://github.com/skojin/rails_test_shortcuts"
 

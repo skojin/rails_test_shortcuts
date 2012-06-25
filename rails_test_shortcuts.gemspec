@@ -3,7 +3,7 @@
 Gem::Specification.new do |gem|
   gem.authors       = ["Sergey Kojin"]
   gem.email         = ["sergey.kojin@gmail.com"]
-  gem.description   = %q{Set of rake tasksе that let's you type less to run tests. }
+  gem.description   = %q{Set of rake tasks that let's you type less to run tests. }
   gem.summary       = %q{Shortcuts for rails tests}
   gem.homepage      = "https://github.com/skojin/rails_test_shortcuts"
 
@@ -12,5 +12,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "rails_test_shortcuts"
   gem.require_paths = ["lib"]
-  gem.version       = '0.1.0'
+  gem.version       = '0.1.1'
 end

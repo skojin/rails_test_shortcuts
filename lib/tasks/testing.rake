@@ -31,6 +31,7 @@ Rake::TestTask.new(:t) do |t|
     t.test_files = filelist
     t.libs << "test"
     t.verbose = true
+    t.warning = false
 
     # filter by test name
     if ARGV[2] && ARGV[2][0..1] == 'n='
